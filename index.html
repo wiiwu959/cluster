@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Wii Wu Nyan-Cat">
+    <meta name="author" content="Iris Wu">
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/Nyan-Cat.png" />
+    <title>Wii Wu is Here!</title>
+    <style>
+        body { background-color:#004b97; }
+        #snow{
+        	opacity:0.65;
+            background: none;
+            font-family: Androgyne;
+            background-image: url('./images/nyancat1.png'),url('./images/nyancat2.png'),url('./images/nyancat3.png');
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index:1;
+            -webkit-animation: snow 1000s linear infinite;
+            -moz-animation: snow 1000s linear infinite;
+            -ms-animation: snow 1000s linear infinite;
+            animation: snow 1000s linear infinite;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+        @keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 100000px -50000px, 10000px -20000px, -10000px -15000px;}          
+        }
+        @-moz-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-webkit-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-ms-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }   
+
+        .text {
+        	font-family: monospace;
+        	color: white; 
+        	font-size: 50px; 
+
+        	position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width:400px;
+			height:200px;
+			margin:auto;
+        }
+    </style>
+</head>
+<body>
+	<div class="text" align="center">
+		Hi! I am Wii.
+		Nice to meet you:3
+	</div>
+    <div id="snow"></div>
+
+</body>
+</html>

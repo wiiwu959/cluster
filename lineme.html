@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Iris Wu">
+    <link rel="Shortcut Icon" type="image/x-icon" href="/images/Nyan-Cat.png" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <title>Message Me!</title>
+
+    <style type="text/css">
+
+		button {
+			padding: 20px 5vw;
+			background:#ccc; 
+			border:0 none;
+			cursor:pointer;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			position: relative;
+			
+		}
+
+		textarea {
+			font-family: 'Noto Sans TC', sans-serif;
+			padding:5px 15px; 
+			border:2px black solid;
+			cursor:pointer;
+			-webkit-border-radius: 5px;
+			border-radius: 5px; 
+			height: 10vh;
+			width: 50vw;
+			
+		}
+
+		.type-in {
+			position:absolute; 
+			top: calc(50% - 25vh); 
+			left: calc(50% - 33vw);
+		}
+
+		.hello {
+			font-family: 'Noto Sans TC', sans-serif;
+			text-align: center;
+		}
+
+    </style>
+</head>
+
+<body>
+	<iframe name="hidden_iframe" style="display:none;"></iframe>
+	<form method='POST' action='https://script.google.com/macros/s/AKfycbx7qzOrsX9eBZzNiXMd92jM4_aLsiB1GLsjLSg9vwMpqp9r4g/exec' target="hidden_iframe">
+		<div class="type-in">
+			<p class="hello">我是不會知道你是誰ㄉ!(雖然我很想)</p>
+			<div><textarea name="msg" cols="50" rows="5" placeholder="打在這裡(つ´ω`)つ"></textarea></div>
+			<div><button type="submit" class="button" onclick="success()">GO! GO! GO!</button></div>
+		</div>
+	</form>
+</body>
+
+</html>
+
+<script type="text/javascript">
+	function success(){
+		alert('成功傳送到我這裡啦(ﾉ>ω<)ﾉ');
+		location.reload();
+	}
+</script>
